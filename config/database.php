@@ -92,7 +92,7 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb+srv://root:root@devconnector.mymn2.mongodb.net/PolyCours?retryWrites=true&w=majority'),
+            'dsn' => env('DB_URI'),
             'database' => 'PolyCours',
         ],
 

@@ -23,6 +23,7 @@
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <script>
         alertify.defaults.transition = 'slide';
         alertify.defaults.theme.ok = 'btn btn-primary';
