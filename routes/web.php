@@ -30,14 +30,30 @@ Route::get('/Contact', function () {
 Route::get('/About', function () {
     return view('Main/about');
 });
+Route::get('/Dash', function () {
+    return view('Dash/main');
+});
+Route::get('/Dash/Profile', function () {
+    return view('Dash/profile');
+});
+Route::get('/Dash/AjouterCour', function () {
+    return view('Dash/courAdd');
+});
 Route::get('/GetToken', function () {
     return csrf_token();
 });
 
+//user
+Route::get('/Logout', "App\Http\Controllers\UserController@Logout");
 Route::post('/Connexion', "App\Http\Controllers\UserController@Login");
+Route::post('/ChangeAvatar', "App\Http\Controllers\UserController@ChangeAvatar");
 Route::post('/VerifyMail', "App\Http\Controllers\UserController@VerifyMail");
 Route::post('/Logging', "App\Http\Controllers\UserController@Login");
-
 Route::post('/SignUp', "App\Http\Controllers\UserController@SignUp");
 Route::post('/First', "App\Http\Controllers\UserController@FirstLogin");
 Route::post('/EditProfile', "App\Http\Controllers\UserController@EditProfile");
+
+
+
+//cours
+Route::post('/AddCour', "App\Http\Controllers\CourController@AddCour");

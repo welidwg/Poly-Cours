@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poly-Cours | Créer Compte</title>
+    <title>{{ env('APP_NAME') }} - Créer Compte</title>
 </head>
 
 <body>
@@ -23,17 +23,17 @@
                 <form method="post" id="signup">
                     <h2 class="text-center"><strong>Crée un compte</strong></h2>
                     <div class="mb-3"><label class="form-label" style="margin-left: 7px;">Votre Nom
-                            :&nbsp;</label><input class="form-control" type="text" data-aos="zoom-in"
-                            data-aos-once="true" name="name" placeholder="votre nom" required=""></div>
+                            :&nbsp;</label><input class="form-control" type="text" data-aos="" data-aos-once="true"
+                            name="name" placeholder="votre nom" required=""></div>
                     <div class="mb-3">
                         <label class="form-label" style="margin-left: 7px;">Votre email
                             (@Polytechnicien.tn)</label><input id="email" class="form-control" type="email"
-                            data-aos="zoom-in" data-aos-once="true" name="email" placeholder="email@polytechnicien.tn">
+                            data-aos="" data-aos-once="true" name="email" placeholder="email@polytechnicien.tn">
                     </div><label class="form-label" style="margin-left: 7px;">Mot de passe :&nbsp;</label>
-                    <div class="mb-3"><input class="form-control" type="password" data-aos="zoom-in"
+                    <div class="mb-3"><input class="form-control" type="password" data-aos=""
                             data-aos-once="true" name="password" id="password" placeholder="Mot de passe"></div><label
                         class="form-label" style="margin-left: 7px;">Confirmer votre mot de passe :</label>
-                    <div class="mb-3"><input class="form-control" type="password" data-aos="zoom-in"
+                    <div class="mb-3"><input class="form-control" type="password" data-aos=""
                             data-aos-once="true" id="confirm" name="confirm" placeholder="Confirmation"></div>
                     @csrf
                     <div class="mb-3"><button id="submit" class="btn btn-primary d-block w-100" type="submit"
